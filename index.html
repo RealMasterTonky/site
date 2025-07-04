@@ -5,7 +5,7 @@ function generatetext() {
   return texts[Math.floor(Math.random() * texts.length)]
 }
 
-document.body.h1.replace('', generatetext())
+document.getElementById('maintitle').value = generatetext()
 </script>
 <html>
   <head>
@@ -15,7 +15,7 @@ document.body.h1.replace('', generatetext())
   </head>
 
   <body>
-    <h1></h1>
+    <h1 id="maintitle", value=""></h1>
     
   </body>
 </html>
