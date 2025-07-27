@@ -3,11 +3,11 @@
   overflow: hidden;
 }
 
-.topbar a {
+.topbar button {
   float: left;
-  color: #f2f2f2;
+  color: #000000;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 25px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
 }
