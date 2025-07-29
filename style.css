@@ -11,3 +11,12 @@
   text-decoration: none;
   font-size: 18px;
 }
+
+.post {
+  background-color: #a5a5a5;
+  outline: 5px solid black;
+}
+
+.post .title {
+  font-size: 30px;
+}
