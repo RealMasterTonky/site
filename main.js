@@ -4,7 +4,7 @@ function r() {
 
 const pages = {
     "https://realmastertonky.github.io/site/": function() {
-        console.log(document.URL)
+        document.body.innerHTML += "<h1>i am beeve</h1>\nsteve*"
     }
 }
 
@@ -12,4 +12,5 @@ function loadpage() {
     const pagefunc = pages[document.URL]
     pagefunc()
 }
+
 
