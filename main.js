@@ -3,12 +3,12 @@ function r() {
 }
 
 const pages = {
-    "": {
-
+    "https://realmastertonky.github.io/site/": function() {
+        console.log("shit")
     }
 }
 
 function loadpage() {
-    const fileurl = document.URL
-    console.log(fileurl)
+    const pagefunc = pages[document.URL]
+    pagefunc()
 }
