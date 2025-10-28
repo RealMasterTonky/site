@@ -11,7 +11,9 @@ function loadtopbar() {
 
     for (let a in topbarbuttons) {
         let button = document.createElement("button")
+        print(a)
         button.innerText = a
+        button.id = `topbarbutton/${a}`
         button.addEventListener("click", function() {
             console.log("yo")
             window.location.href = topbarbuttons[a]
@@ -22,6 +24,13 @@ function loadtopbar() {
 
 const pages = {
     "https://realmastertonky.github.io/site/": function() {
+        let test = document.createElement("button")
+        test.className = "test"
+        test.addEventListener("click", function() {
+            console.log("yo")
+            window.location.href = topbarbuttons["my homework (real)"]
+        });
+        document.body.appendChild(test)
         document.body.innerHTML += "<h1>i am beeve</h1>\nsteve*"
         document.title = "dermo!"
     }
@@ -32,6 +41,7 @@ function loadpage() {
     const pagefunc = pages[document.URL]
     pagefunc()
 }
+
 
 
 
