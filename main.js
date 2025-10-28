@@ -12,9 +12,12 @@ function loadtopbar() {
     for (let a in topbarbuttons) {
         let button = document.createElement("button")
         button.innerText = a
-        button.id = `topbarbutton/${a}`
-        button.onclick = function(){alert('yo')}
+        button.className = `topbarbutton`
         topbar.appendChild(button)
+    }
+
+    for (let d in topbarbuttons.querySelectorAll('topbarbutton')){
+        d.onclick = function(){alert('yo')}
     }
 }
 
@@ -30,6 +33,7 @@ function loadpage() {
     const pagefunc = pages[document.URL]
     pagefunc()
 }
+
 
 
 
