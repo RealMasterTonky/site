@@ -7,6 +7,7 @@ const topbarbuttons = {
 function loadtopbar() {
     let topbar = document.createElement("div")
     topbar.className = "topbar"
+    document.body.appendChild(topbar)
 
     for (let a in topbarbuttons) {
         let button = document.createElement("button")
@@ -14,13 +15,14 @@ function loadtopbar() {
         button.onclick = function(){
             window.location.href=topbarbuttons[a]
         }
+        topbar.appendChild(button)
     }
 }
 
 const pages = {
     "https://realmastertonky.github.io/site/": function() {
         document.body.innerHTML += "<h1>i am beeve</h1>\nsteve*"
-        document.title = "dermo"
+        document.title = "dermo!"
     }
 }
 
@@ -29,6 +31,7 @@ function loadpage() {
     const pagefunc = pages[document.URL]
     pagefunc()
 }
+
 
 
 
