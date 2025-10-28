@@ -9,22 +9,8 @@ function loadtopbar() {
     topbar.className = "topbar"
     document.body.appendChild(topbar)
 
-    let b = []
     for (let a in topbarbuttons) {
-        let button = document.createElement("button")
-        button.innerText = a
-        button.id = `topbarbutton/${a}`
-        topbar.appendChild(button)
-        b.push(`topbarbutton/${a}`)
-    }
-
-    for(let c in b){
-        const button = document.getElementById(c)
-        if (button){
-            button.addEventListener("click", function() {
-                alert("Button clicked!")
-            })
-        }
+        topbar.innerHTML += `<button onclick="window.location.href=${topbarbuttons[a]}">${a}</button>`
     }
 }
 
@@ -44,6 +30,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
