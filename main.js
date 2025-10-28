@@ -13,9 +13,9 @@ function loadtopbar() {
         let button = document.createElement("button")
         button.innerText = a
         button.onclick = function(){
-            alert("yo")
-            window.location.href=topbarbuttons[a]
-        }
+            alert("yo");
+            // window.location.href=topbarbuttons[a]
+        };
         topbar.appendChild(button)
     }
 }
@@ -32,6 +32,7 @@ function loadpage() {
     const pagefunc = pages[document.URL]
     pagefunc()
 }
+
 
 
 
