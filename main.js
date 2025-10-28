@@ -16,9 +16,9 @@ function loadtopbar() {
         topbar.appendChild(button)
     }
 
-    for (let d in topbarbuttons.querySelectorAll('topbarbutton')){
-        d.onclick = function(){alert('yo')}
-    }
+    topbarbuttons.querySelectorAll('topbarbutton').forEach(function(element){
+        element.onclick=function(){alert('yo!')}                   
+    })
 }
 
 const pages = {
@@ -33,6 +33,7 @@ function loadpage() {
     const pagefunc = pages[document.URL]
     pagefunc()
 }
+
 
 
 
