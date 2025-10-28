@@ -11,7 +11,7 @@ function loadtopbar() {
 
     for (let a in topbarbuttons) {
         let button = document.createElement("button")
-        print(a)
+        console.log(a)
         button.innerText = a
         button.id = `topbarbutton/${a}`
         button.addEventListener("click", () => {
@@ -41,6 +41,7 @@ function loadpage() {
     const pagefunc = pages[document.URL]
     pagefunc()
 }
+
 
 
 
