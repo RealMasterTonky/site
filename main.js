@@ -15,10 +15,6 @@ function loadtopbar() {
         button.className = `topbarbutton`
         topbar.appendChild(button)
     }
-
-    topbarbuttons.querySelectorAll('topbarbutton').forEach(function(element){
-        element.onclick=function(){alert('yo!')}                   
-    })
 }
 
 const pages = {
@@ -33,11 +29,6 @@ function loadpage() {
     const pagefunc = pages[document.URL]
     pagefunc()
 }
-
-document.addEventListener("DOMContentLoaded", function() { // how the hell does this work
-    loadpage()
-});
-
 
 
 
