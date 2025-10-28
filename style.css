@@ -1,3 +1,7 @@
+*{
+  background-color:LightGray;
+}
+
 .topbar {
   background-color: #444444;
   overflow: hidden;
