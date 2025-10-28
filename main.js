@@ -10,7 +10,7 @@ function loadtopbar() {
     document.body.appendChild(topbar)
 
     for (let a in topbarbuttons) {
-        topbar.innerHTML += `<button onclick="window.location.href=${topbarbuttons[a]}">${a}</button>`
+        topbar.innerHTML += `<button onclick="window.location.href='${topbarbuttons[a]}'">${a}</button>`
     }
 }
 
@@ -30,6 +30,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
