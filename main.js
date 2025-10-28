@@ -14,9 +14,7 @@ function loadtopbar() {
         button.innerText = a
         button.className = `topbarbutton`
         topbar.appendChild(button)
-        button.addEventListener("click", function() {
-            window.location.href = topbarbuttons[name];
-        });
+        button.onclick = function(){console.log("help")}
     }
 }
 
@@ -32,6 +30,7 @@ function loadpage() {
     const pagefunc = pages[document.URL]
     pagefunc()
 }
+
 
 
 
