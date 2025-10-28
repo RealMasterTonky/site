@@ -13,7 +13,7 @@ function loadtopbar() {
         let button = document.createElement("button")
         button.innerText = a
         button.addEventListener("click", function() {
-            print("yo")
+            console.log("yo")
             window.location.href = topbarbuttons[a]
         });
         topbar.appendChild(button)
@@ -32,6 +32,7 @@ function loadpage() {
     const pagefunc = pages[document.URL]
     pagefunc()
 }
+
 
 
 
