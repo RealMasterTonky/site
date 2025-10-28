@@ -1,0 +1,22 @@
+.topbar {
+  background-color: #444444;
+  overflow: hidden;
+}
+
+.topbar button {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.post {
+  background-color: #a5a5a5;
+  outline: 5px solid black;
+}
+
+.post .title {
+  font-size: 30px;
+}
