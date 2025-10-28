@@ -1,5 +1,20 @@
-function r() {
-    console.log("poo")
+const topbarbuttons = {
+    "home": "https://realmastertonky.github.io/site/",
+    "your mother's home": "https://realmastertonky.github.io/site/",
+    "my homework (real)": "https://docs.google.com/spreadsheets/d/1bxhj0Xtixkpo_BtzsnIg-qwLTA7qdb7Y6fursQjRZKM/edit?gid=737244206#gid=737244206",
+}
+
+function loadtopbar() {
+    let topbar = document.createElement("div")
+    topbar.className = "topbar"
+
+    for (let a in topbarbuttons) {
+        let button = document.createElement("button")
+        button.innerText = a
+        button.onclick = function(){
+            window.location.href=topbarbuttons[a]
+        }
+    }
 }
 
 const pages = {
@@ -10,9 +25,11 @@ const pages = {
 }
 
 function loadpage() {
+    loadtopbar()
     const pagefunc = pages[document.URL]
     pagefunc()
 }
+
 
 
 
