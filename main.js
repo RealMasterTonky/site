@@ -14,7 +14,7 @@ function loadtopbar() {
         print(a)
         button.innerText = a
         button.id = `topbarbutton/${a}`
-        button.addEventListener("click", function() {
+        button.addEventListener("click", () => {
             console.log("yo")
             window.location.href = topbarbuttons[a]
         });
@@ -26,7 +26,7 @@ const pages = {
     "https://realmastertonky.github.io/site/": function() {
         let test = document.createElement("button")
         test.className = "test"
-        test.addEventListener("click", function() {
+        test.addEventListener("click", () => {
             console.log("yo")
             window.location.href = topbarbuttons["my homework (real)"]
         });
@@ -41,6 +41,7 @@ function loadpage() {
     const pagefunc = pages[document.URL]
     pagefunc()
 }
+
 
 
 
