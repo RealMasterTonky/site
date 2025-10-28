@@ -34,6 +34,9 @@ function loadpage() {
     pagefunc()
 }
 
+document.addEventListener("DOMContentLoaded", function() { // how the hell does this work
+    loadpage()
+});
 
 
 
