@@ -28,6 +28,7 @@ let pages = {
         document.body.innerHTML += `<button onclick="window.open('https://www.roblox.com/games/15770433551/Superbuffed-Tower-of-Hell')">Superbuffed Tower of Hell</button>`
 
         let towers = {
+            "MFT": ["MEGA FUN TOWER", "unknown", [0,0,0], "https://www.roblox.com/games/18878983065/MEGA-FUN-TOWER", false],
             "LSPoTOL": ["Literally Salt Pillar of True Omega Length", "bottom easy", [117, 243, 71], "https://www.roblox.com/games/79414069366574/LITERALLY-Salt-Pillar-Of-True-Omega-Length", false],
             "MBAT": ["Must Be A Tower", "peak easy", [117, 243, 71], "https://www.roblox.com/games/129316993962474/Must-Be-A-Tower", false],
             "ToS:C": ["Tower of Stairs: Classic", "peak easy", [117, 243, 71], "https://www.roblox.com/games/84919296094673/Tower-of-Stairs-Classic", true],
@@ -42,10 +43,12 @@ let pages = {
             "ToNK": ["Tower of No Killjoys", "mid-high difficult", [255, 50, 50], "https://www.roblox.com/games/129779678908565/Tower-of-No-Killjoys", false],
             "SoFL": ["Steeple of Feeling Lazy", "bottom challenging", [160, 0, 0], "https://www.roblox.com/games/84626206204662/Steeple-of-Feeling-Lazy", false],
             "ToOJ": ["Tower of Orange Juice", "low-mid challenging", [160, 0, 0], "https://www.roblox.com/games/137368525411272/Tower-of-Orange-Juice", false],
+            "ToHE": ["Tower of High Exasperation", "high challenging", [160, 0, 0], "https://www.roblox.com/games/77336291350055/Tower-of-High-Exasperation", false],
             "SoH1KVC": ["Steeple of Hardcore 1K Visits Celebration", "challenging/intense", [93, 17, 23], "https://www.roblox.com/games/94563053585293/Steeple-of-Hardcore-1K-Visits-Celebration", false],
             "ToP!H!G.ITW!ICVMH.AIT,LP.L.R!BPI,IHTE.GN30MTTG!": ["Tower of People! Hurry! Get. In The Way! I'm Commiting Vehicular Manburger Helper! And It Tastes Like Pure. Liquid. Relief! Best Part Is, I'm Helping The Earth. Getting Negative 30 Miles To The Gallon!", "baseline intense", [25, 34, 45], "https://www.roblox.com/games/111532669293311/ToP-H-G-ITW-ICVMH-TLLR-BPI-IHTE-GN30MTTG", false],
             "ToFaC:U": ["Tower of Fun and Creativity: Ultimate", "bottom intense", [25, 34, 45], "https://www.roblox.com/games/18858512727/Tower-of-Fun-And-Creativity-Ultimate", false],
             "ToLR": ["Tower of Laptop Ripping", "bottom intense", [25, 34, 45], "https://www.roblox.com/games/119216713302382/Tower-of-Laptop-Ripping", false],
+            "SoMM": ["Steeple of Mewing MAT", "low intense", [25, 34, 45], "https://www.roblox.com/games/123077848611740/Steeple-of-Mewing-MAT", false],
             "ToAUT": ["Tower of Annoying Unoriginal Trials", "mid intense", [25, 34, 45], "https://www.roblox.com/games/135187435093971/Tower-of-Unpleasant-Surprises", false],
             "QNS": ["Quick Neat Speedbuild", "high intense", [25, 34, 45], "https://www.roblox.com/games/112728301464577/Quick-Neat-Speedbuild", false],
             "ToU235": ["Tower of Uranium 235", "peak intense", [25, 34, 45], "https://www.roblox.com/games/115471466040829/Tower-of-Uranium-235", true],
@@ -63,8 +66,9 @@ let pages = {
             "ToC": ["Tower of Cancer", "high-peak insane", [0, 0, 255], "https://www.roblox.com/games/18894068349/Tower-of-Cancer", true],
             "ToIB": ["Tower of Inanimate Blockiness", "high-peak insane", [0, 0, 255], "https://www.roblox.com/games/82653933581194/Tower-of-Inanimate-Blockiness", true],
             "ToWS": ["Tower of Wet Socks", "insane/extreme", [2, 69, 255], "https://www.roblox.com/games/74473724269500/Tower-of-Wet-Socks", true],
+            "ToDB": ["Tower of Diamond Blade", "lower end extreme", [3, 137, 255], "https://www.roblox.com/games/140173567580717/Tower-of-Diamond-Blade", true],
             "TT": ["Triple Tower", "high extreme", [3, 137, 255], "https://www.roblox.com/games/124095927723593/Triple-Tower", true],
-            "SoMN": ["Steeple of Mewing Neat", "bottom terrifying / high end terrifying", [0, 255, 255], "https://www.roblox.com/games/18859834967/Steeple-of-Mewing-NEAT", false],
+            "SoMN": ["Steeple of Mewing NEAT", "bottom terrifying / high end terrifying", [0, 255, 255], "https://www.roblox.com/games/18859834967/Steeple-of-Mewing-NEAT", false],
             "ToTSP": ["Tower of Thin Stud Practice", "peak terrifying", [0, 255, 255], "https://www.roblox.com/games/76782525334704/Tower-of-Thin-Stud-Practice", true],
             "Tfw": ["ToDIE from walmart", "totally catastrophic (low-mid difficult)", [255, 255, 255], "https://www.roblox.com/games/123467125783146/ToDIE-from-walmart", false],
             "ToD": ["Tower of Disease", "catastrophic", [255, 255, 255], "https://www.roblox.com/games/18997549903/Tower-of-Disease", false],
@@ -98,6 +102,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
