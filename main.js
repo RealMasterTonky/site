@@ -16,8 +16,9 @@ function loadtopbar() {
 
 let pages = {
     "https://realmastertonky.github.io/site/": function() {
-        document.body.innerHTML += "<h1>i am beeve</h1>\nsteve*"
-        document.title = "dermo!"
+        document.body.innerHTML += "<h1>home</h1>"
+        document.body.innerHTML += "<p>welcome to my website! for now it's about showing my things & creations</p>"
+        document.body.innerHTML += "<p>so yeah, feel free to explore things here</p>"
     }
 }
 
@@ -30,6 +31,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
