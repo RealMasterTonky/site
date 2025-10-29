@@ -98,7 +98,10 @@ let pages = {
         document.body.innerHTML += `<button style="font-size:30px">irl drawings</button><br>pictures of papers with drawings`
     },
     "https://realmastertonky.github.io/site/artworks/atrocities": function() {
-        document.body.innerHTML += "<h1>i... am sgleve.</h1>"
+        document.body.innerHTML += "<h1>atrocities</h1>"
+        document.body.innerHTML += "<p>good luck viewing all of these</p>"
+
+        
     },
 }
 
@@ -115,6 +118,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
