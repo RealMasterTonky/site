@@ -94,6 +94,7 @@ let pages = {
 }
 
 function loadpage() {
+    document.head.innerHTML += `<link rel="icon" type="image/x-icon" href="content/icon.ico"></link>`
     loadtopbar()
     let pagefunc = pages[document.URL]
     pagefunc()
@@ -102,6 +103,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
