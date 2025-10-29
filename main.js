@@ -103,10 +103,10 @@ let pages = {
 }
 
 function loadpage() {
-    let depth = document.URL.split('/')
-    console.log(depth)
-    console.log(depth.length)
-    document.head.innerHTML += `<link rel="icon" type="image/x-icon" href="content/icon.ico"></link>`
+    let depth = document.URL.split('/').length-5
+    let thatthing = "../"
+    if(depth === 0){thatthing=""}else{if(depth>1){thatthing.repeat(depth)}}
+    document.head.innerHTML += `<link rel="icon" type="image/x-icon" href="${thatthing}content/icon.ico"></link>`
     loadtopbar()
     let pagefunc = pages[document.URL]
     pagefunc()
@@ -115,6 +115,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
