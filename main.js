@@ -1,7 +1,6 @@
 let topbarbuttons = {
     "home": "https://realmastertonky.github.io/site/",
-    "your mother's home": "https://realmastertonky.github.io/site/",
-    "my homework (real)": "https://docs.google.com/spreadsheets/d/1bxhj0Xtixkpo_BtzsnIg-qwLTA7qdb7Y6fursQjRZKM/edit?gid=737244206#gid=737244206",
+    "roblox related stuff": "https://realmastertonky.github.io/site/roblox",
 }
 
 function loadtopbar() {
@@ -31,6 +30,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
