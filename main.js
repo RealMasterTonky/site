@@ -91,6 +91,12 @@ let pages = {
             document.body.innerHTML += `<p style="color:rgb(${colors[0]},${colors[1]},${colors[2]})">${tower} - ${towerstats[0]} - ${towerstats[1]} <button onclick="window.open('${towerstats[3]}')">check (${playable})</button></p>`
         }
     },
+    "https://realmastertonky.github.io/site/artworks": function() {
+        document.body.innerHTML += "<h1>my artworks</h1>"
+        document.body.innerHTML += `<button style="font-size:30px">atrocities</button><br>low quality caricatures that i drew for laughs and coughs<br><br>`
+        document.body.innerHTML += `<button style="font-size:30px">digital drawings</button><br>pixels arranged in a way that makes (imo) decent images<br><br>`
+        document.body.innerHTML += `<button style="font-size:30px">irl drawings</button><br>pictures of papers with drawings`
+    }
 }
 
 function loadpage() {
@@ -103,6 +109,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
