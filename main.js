@@ -27,9 +27,6 @@ let pages = {
         document.body.innerHTML += `<button onclick="window.open('https://www.roblox.com/games/111709592979269/MasterTonkys-Towering-Tomfoolery')">MasterTonky's Towering Tomfoolery</button>`
         document.body.innerHTML += `<button onclick="window.open('https://www.roblox.com/games/15770433551/Superbuffed-Tower-of-Hell')">Superbuffed Tower of Hell</button>`
 
-        document.body.innerHTML += `<p style="font-size:34px">my towers</p>`
-        document.body.innerHTML += `<p style="color:rgba(0,0,0,0.4)">keep in mind that most of these are not playable thx to the stupid roblox maturity label update</p>`
-        document.body.innerHTML += `<p style="color:rgba(0,0,0,0.4)">also this is unfinished for now</p>`
         let towers = {
             "LSPoTOL": ["Literally Salt Pillar of True Omega Length", "bottom easy", [117, 243, 71], "https://www.roblox.com/games/79414069366574/LITERALLY-Salt-Pillar-Of-True-Omega-Length", false],
             "MBAT": ["Must Be A Tower", "peak easy", [117, 243, 71], "https://www.roblox.com/games/129316993962474/Must-Be-A-Tower", false],
@@ -74,6 +71,10 @@ let pages = {
             "ToLM": ["Tower of Lunatic Masochism", "bottom-low unreal", [75, 0, 200], "https://www.roblox.com/games/133003290698864/Tower-of-Lunatic-Masochism", true],
         }
 
+        document.body.innerHTML += `<p style="font-size:34px">my towers (count: ${towers.length})</p>`
+        document.body.innerHTML += `<p style="color:rgba(0,0,0,0.4)">keep in mind that most of these are not playable thx to the stupid roblox maturity label update</p>`
+        document.body.innerHTML += `<p style="color:rgba(0,0,0,0.4)">includes all solo towers</p>`
+
         for(tower in towers) {
             let towerstats = towers[tower]
             let colors = towerstats[2]
@@ -97,6 +98,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
