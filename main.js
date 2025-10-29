@@ -71,7 +71,7 @@ let pages = {
             "ToLM": ["Tower of Lunatic Masochism", "bottom-low unreal", [75, 0, 200], "https://www.roblox.com/games/133003290698864/Tower-of-Lunatic-Masochism", true],
         }
 
-        document.body.innerHTML += `<p style="font-size:34px">my towers (count: ${towers.length})</p>`
+        document.body.innerHTML += `<p style="font-size:34px">my towers (count: ${Object.keys(towers).length})</p>`
         document.body.innerHTML += `<p style="color:rgba(0,0,0,0.4)">keep in mind that most of these are not playable thx to the stupid roblox maturity label update</p>`
         document.body.innerHTML += `<p style="color:rgba(0,0,0,0.4)">includes all solo towers</p>`
 
@@ -98,6 +98,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
