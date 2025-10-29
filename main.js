@@ -28,15 +28,22 @@ let pages = {
         document.body.innerHTML += `<button onclick="window.open('https://www.roblox.com/games/15770433551/Superbuffed-Tower-of-Hell')">Superbuffed Tower of Hell</button>`
 
         document.body.innerHTML += `<p style="font-size:34px">my towers</p>`
+        document.body.innerHTML += `<p style="color:rgba(0,0,0,0.4)">keep in mind that most of these are not playable thx to the stupid roblox maturity label update</p>`
         let towers = {
-            "ToS": ["Tower of Stairs", "peak medium", [255, 254, 0]],
-            "ToC": ["Tower of Cancer", "high-peak insane", [0, 0, 255]],
+            "ToS": ["Tower of Stairs", "peak medium", [255, 254, 0], "https://www.roblox.com/games/18991411794/Tower-of-Stairs", false],
+            "ToC": ["Tower of Cancer", "high-peak insane", [0, 0, 255], "https://www.roblox.com/games/18894068349/Tower-of-Cancer", true],
         }
 
         for(tower in towers) {
             let towerstats = towers[tower]
             let colors = towerstats[2]
-            document.body.innerHTML += `<p style="color:rgb(${colors[0]},${colors[1]},${colors[2]})">${tower} - ${towerstats[0]} - ${towerstats[1]}</p>`
+            let playable
+            if(towerstats[4] === true){
+                playable = "playable!"
+            } else {
+                playable = "unplayable."
+            }
+            document.body.innerHTML += `<p style="color:rgb(${colors[0]},${colors[1]},${colors[2]})">${tower} - ${towerstats[0]} - ${towerstats[1]} <button onclick="window.open('${towerstats[3]}')">check (${playable})</button></p>`
         }
     },
 }
@@ -50,6 +57,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
