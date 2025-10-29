@@ -36,7 +36,7 @@ let pages = {
         for(tower in towers) {
             let towerstats = towers[tower]
             let colors = towerstats[2]
-            document.body.innerHTML += `<p style="color:rgb(${colors[0],colors[1],colors[2]})">${tower} - ${towerstats[0]} - ${towerstats[1]}</p>`
+            document.body.innerHTML += `<p style="color:rgb(${colors[0]},${colors[1]},${colors[2]})">${tower} - ${towerstats[0]} - ${towerstats[1]}</p>`
         }
     },
 }
@@ -50,6 +50,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
