@@ -30,7 +30,19 @@ let pages = {
         document.body.innerHTML += `<p style="font-size:34px">my towers</p>`
         document.body.innerHTML += `<p style="color:rgba(0,0,0,0.4)">keep in mind that most of these are not playable thx to the stupid roblox maturity label update</p>`
         let towers = {
+            "LSPoTOL": ["Literally Salt Pillar of True Omega Length", "bottom easy", [117, 243, 71], "https://www.roblox.com/games/79414069366574/LITERALLY-Salt-Pillar-Of-True-Omega-Length", false],
+            "MBAT": ["Must Be A Tower", "peak easy", [117, 243, 71], "https://www.roblox.com/games/129316993962474/Must-Be-A-Tower", false],
+            "ToS:C": ["Tower of Stairs: Classic", "peak easy", [117, 243, 71], "https://www.roblox.com/games/84919296094673/Tower-of-Stairs-Classic", true],
+            "CBAT": ["Can't Be A Tower", "mid medium", [255, 254, 0], "https://www.roblox.com/games/18923385860/Tiny-Tower", false],
+            "ET": ["Easy Tower", "mid-high medium", [255, 254, 0], "https://www.roblox.com/games/93436120874613/Easy-Tower", false],
+            "ToIBOWTV": ["Tower of I Became One With The Void", "high medium", [255, 254, 0], "https://www.roblox.com/games/123655336164654/Tower-of-I-Became-One-With-The-Void", false],
             "ToS": ["Tower of Stairs", "peak medium", [255, 254, 0], "https://www.roblox.com/games/18991411794/Tower-of-Stairs", false],
+            "ToSC": ["Tower of Slight Confusion", "low hard", [253, 124, 0], "https://www.roblox.com/games/92162459492655/Tower-of-Slight-Confusion", true],
+            "ToCS": ["Tower of Cliff Scaling", "low hard", [253, 124, 0], "https://www.roblox.com/games/18936237284/Tower-of-Cliff-Scaling", false],
+            "SoFS": ["Steeple of Final Stretch", "high hard", [253, 124, 0], "https://www.roblox.com/games/104629248891208/Steeple-of-Final-Stretch", false],
+            "SoBiaH": ["Steeple of Being in a Hurry", "bottom difficult", [255, 50, 50], "https://www.roblox.com/games/139955416730004/Steeple-of-Being-In-a-Hurry", false],
+            "ToNK": ["Tower of No Killjoys", "mid-high difficult", [255, 50, 50], "https://www.roblox.com/games/129779678908565/Tower-of-No-Killjoys", false],
+            "SoFL": ["Steeple of Feeling Lazy", "bottom challenging", [160, 0, 0], "https://www.roblox.com/games/84626206204662/Steeple-of-Feeling-Lazy", false],
             "ToC": ["Tower of Cancer", "high-peak insane", [0, 0, 255], "https://www.roblox.com/games/18894068349/Tower-of-Cancer", true],
         }
 
@@ -57,6 +69,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
