@@ -29,6 +29,7 @@ let pages = {
 
         document.body.innerHTML += `<p style="font-size:34px">my towers</p>`
         document.body.innerHTML += `<p style="color:rgba(0,0,0,0.4)">keep in mind that most of these are not playable thx to the stupid roblox maturity label update</p>`
+        document.body.innerHTML += `<p style="color:rgba(0,0,0,0.4)">also this is unfinished for now</p>`
         let towers = {
             "LSPoTOL": ["Literally Salt Pillar of True Omega Length", "bottom easy", [117, 243, 71], "https://www.roblox.com/games/79414069366574/LITERALLY-Salt-Pillar-Of-True-Omega-Length", false],
             "MBAT": ["Must Be A Tower", "peak easy", [117, 243, 71], "https://www.roblox.com/games/129316993962474/Must-Be-A-Tower", false],
@@ -69,6 +70,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
