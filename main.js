@@ -23,7 +23,7 @@ let pages = {
     "https://realmastertonky.github.io/site/roblox/": function() {
         document.body.innerHTML += "<h1>roblox related stuff</h1>"
         document.body.innerHTML += `<p style="font-size:34px">my games</p><br>`
-        document.body.innerHTML += "<button onclick="window.open('https://www.roblox.com/games/15954053813/Tonk-Madness')">Tonk Madness</button>"
+        document.body.innerHTML += `<button onclick="window.open('https://www.roblox.com/games/15954053813/Tonk-Madness')">Tonk Madness</button>`
     },
 }
 
@@ -36,6 +36,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
