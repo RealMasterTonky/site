@@ -161,7 +161,10 @@ let pages = {
         document.body.appendChild(gallery)
         
         files.forEach(filename => {
-            console.log(filename)
+            let image = document.createElement("div")
+            image.className = "image"
+            gallery.appendChild(image)
+            image.innerHTML += `<img src="../content/atrocities/${filename}"></img><br>${filename}`
         })
     },
 }
@@ -179,6 +182,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
