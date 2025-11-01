@@ -164,7 +164,7 @@ let pages = {
             let image = document.createElement("div")
             image.className = "image"
             gallery.appendChild(image)
-            image.innerHTML += `<img src="../content/atrocities/${filename}"></img><br>${filename}`
+            image.innerHTML += `<img src="../content/atrocities/${filename}"></img><br><div class="title">${filename}</div>`
         })
     },
 }
@@ -182,6 +182,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
