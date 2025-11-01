@@ -1,6 +1,3 @@
-const fs = require('fs')
-const path = require('path')
-
 let topbarbuttons = {
     "home": "https://realmastertonky.github.io/site/",
     "my artworks": "https://realmastertonky.github.io/site/artworks",
@@ -104,11 +101,67 @@ let pages = {
         document.body.innerHTML += "<h1>atrocities</h1>"
         document.body.innerHTML += "<p>good luck viewing all of these</p>"
 
-        const atrocitiespath = './content/atrocities/'
-        fs.readdir(atrocitiespath, (err, files) => {
-            files.forEach(file => {
-                console.log(file)   
-            })   
+        let files = [
+            "ATROCITY.png",
+            "FRISK FROM SOU.png",
+            "LET'S FUCKING GOOOOOOOOOOOO.png",
+            "SHOCKED.png",
+            "Smiling burping idiot.png",
+            "WEGA APPROVER.png",
+            "WEGA.png",
+            "angry cuphead goblin.png",
+            "arrrrrrrrrrr matey.png",
+            "average smoking dude.png",
+            "broken axe.png",
+            "buff pig hybrid thing.png",
+            "cat.png",
+            "chara ze knife.png",
+            "chill dude.png",
+            "coems.png",
+            "cold emoji thing.png",
+            "cry potato.png",
+            "demon rock.png",
+            "dinosaur thing.png",
+            "drawn psychopath.png",
+            "engineer.png",
+            "epic.png",
+            "fat thing..png",
+            "finger clown.png",
+            "freaky.png",
+            "freddy wannabe.png",
+            "goo goo gaa gaa ahh vampire thing.png",
+            "guy with a mace.png",
+            "guy.png",
+            "handsome.png",
+            "i drink coffee.png",
+            "ice cream man.png",
+            "mama am a criminal.png",
+            "man.png",
+            "mind blown.png",
+            "muahahHAHAAHAHAHAHA.png",
+            "nerd thing.png",
+            "people with headless.png",
+            "pringles.png",
+            "sick man thing.png",
+            "stinkers.png",
+            "surprised geometry gash thingy.png",
+            "the pokemon cowboy.png",
+            "thing.png",
+            "this thing.png",
+            "toilet driver omg.png",
+            "troll cloud.png",
+            "utterly surprised thing.png",
+            "vampire looking thing.png",
+            "whatthefuck.png",
+            "wtf have i created.png",
+        ]
+
+        let gallery = document.createElement("div")
+        gallery.className = "gallery"
+        document.body.appendChild(gallery)
+        
+        files.forEach(filename => {
+            print(filename)
         })
     },
 }
@@ -126,6 +179,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
