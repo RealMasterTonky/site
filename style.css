@@ -1,4 +1,4 @@
-body{
+body {
   background-color:LightGray;
 }
 
@@ -14,6 +14,23 @@ body{
   padding: 14px 25px;
   text-decoration: none;
   font-size: 18px;
+}
+
+
+.image {
+  padding: 6px;
+  float: left;
+  width: 25%;
+  border: 2px solid #000000;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.image .title {
+  text-align: center;
 }
 
 .post {
