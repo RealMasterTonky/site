@@ -161,7 +161,7 @@ let pages = {
         document.body.appendChild(gallery)
         
         files.forEach(filename => {
-            print(filename)
+            console.log(filename)
         })
     },
 }
@@ -179,6 +179,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
