@@ -1,3 +1,6 @@
+const fs = require('fs')
+const path = require('path')
+
 let topbarbuttons = {
     "home": "https://realmastertonky.github.io/site/",
     "my artworks": "https://realmastertonky.github.io/site/artworks",
@@ -101,7 +104,12 @@ let pages = {
         document.body.innerHTML += "<h1>atrocities</h1>"
         document.body.innerHTML += "<p>good luck viewing all of these</p>"
 
-        
+        const atrocitiespath = './content/atrocities/'
+        fs.readdir(atrocitiespath, (err, files) => {
+            files.forEach(file => {
+                console.log(file)   
+            })   
+        })
     },
 }
 
@@ -118,6 +126,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
