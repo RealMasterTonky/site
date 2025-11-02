@@ -71,7 +71,7 @@ let pages = {
             "SoMN": ["Steeple of Mewing NEAT", "bottom terrifying / high end terrifying", [0, 255, 255], "https://www.roblox.com/games/18859834967/Steeple-of-Mewing-NEAT", false],
             "ToTSP": ["Tower of Thin Stud Practice", "peak terrifying", [0, 255, 255], "https://www.roblox.com/games/76782525334704/Tower-of-Thin-Stud-Practice", true],
             "Tfw": ["ToDIE from walmart", "totally catastrophic (low-mid difficult)", [255, 255, 255], "https://www.roblox.com/games/123467125783146/ToDIE-from-walmart", false],
-            "ToD": ["Tower of Disease", "catastrophic", [255, 255, 255], "https://www.roblox.com/games/18997549903/Tower-of-Disease", false],
+            "ToD": ["Tower of Disease", "catastrophic", [255, 255, 255], "https://www.roblox.com/games/18997549903/Tower-of-Disease", true],
             "ToLM": ["Tower of Lunatic Masochism", "bottom-low unreal", [75, 0, 200], "https://www.roblox.com/games/133003290698864/Tower-of-Lunatic-Masochism", true],
         }
 
@@ -167,6 +167,27 @@ let pages = {
             image.innerHTML += `<img src="../content/atrocities/${filename}"></img><br><div class="title">${filename}</div>`
         })
     },
+    "https://realmastertonky.github.io/site/artworks/atrocities": function() {
+        document.body.innerHTML += "<h1>digital drawings</h1>"
+
+        let files = [
+            "area 2.png",
+            "pit of misery.png",
+            "ToHH completion vid thumbnail (no text).png",
+            "my friend's dream.png",
+        ]
+
+        let gallery = document.createElement("div")
+        gallery.className = "gallery"
+        document.body.appendChild(gallery)
+        
+        files.forEach(filename => {
+            let image = document.createElement("div")
+            image.className = "image"
+            gallery.appendChild(image)
+            image.innerHTML += `<img src="../content/digital/${filename}"></img><br><div class="title">${filename}</div>`
+        })
+    },
 }
 
 function loadpage() {
@@ -182,6 +203,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
