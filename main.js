@@ -188,6 +188,26 @@ let pages = {
             image.innerHTML += `<img src="../content/digital/${filename}"></img><br><div class="title">${filename}</div>`
         })
     },
+    "https://realmastertonky.github.io/site/artworks/irl": function() {
+        document.body.innerHTML += "<h1>irl drawings</h1>"
+
+        let files = [
+            "me (but im one with the stars).png",
+            "parallel world.png",
+            "light of hope.png",
+        ]
+
+        let gallery = document.createElement("div")
+        gallery.className = "gallery"
+        document.body.appendChild(gallery)
+        
+        files.forEach(filename => {
+            let image = document.createElement("div")
+            image.className = "image"
+            gallery.appendChild(image)
+            image.innerHTML += `<img src="../content/digital/${filename}"></img><br><div class="title">${filename}</div>`
+        })
+    },
 }
 
 function loadpage() {
@@ -203,6 +223,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
