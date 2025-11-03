@@ -26,7 +26,7 @@ let pages = {
         document.body.innerHTML += "<p>all of them are made in python 3.8.0, so don't be suprised if they don't work properly</p>"
         document.body.innerHTML += "<p>and every program (except for maththing.py) requires pygame module.</p>"
         document.body.innerHTML += "<br>"
-        document.body.innerHTML += `<p>first game.py - game where red ball (that ur controlling using arrow keys) eats blue balls, growing in size.</p><button onclick="window.open('./content/pythonprograms/first game.py')">download</button>`
+        document.body.innerHTML += `<div style="background-color:rgba(255,255,255,0.8)"><p>first game.py - game where red ball (that ur controlling using arrow keys) eats blue balls, growing in size.</p><button onclick="window.open('./content/pythonprograms/first game.py')">download</button></div>`
     },
     "https://realmastertonky.github.io/site/roblox": function() {
         document.body.innerHTML += "<h1>roblox related stuff</h1>"
@@ -231,6 +231,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
