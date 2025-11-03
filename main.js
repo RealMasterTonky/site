@@ -59,6 +59,8 @@ let pages = {
 
         document.body.innerHTML += "<br>"
 
+		document.body.innerHTML += `<p style="font-size:34px">legacy posts</p>`
+
         let legacypostsdiv = document.createElement('div')
         legacypostsdiv.className = "MyPosts"
         document.body.appendChild(legacypostsdiv)
@@ -72,6 +74,40 @@ let pages = {
 		<p>anyways uh yeah... quite sad that roblox's this corporate, like they couldn't even make a proper moderation team 💔</p>
 		<p>and i hope things will go well soon. #FREESCHLEP !</p>
         </div>
+		
+		<div class="post">
+		<p class="title">fun fact!</p>
+		<p>this is the first ever tonk image right here</p>
+		<p>made on april 9th, 2021 (4 years ago. time flies fast fr...)</p>
+        <br>
+		<img src="./content/first tonk image.png" alt="first tonk image">
+		</div>
+
+		<div class="post">
+		<p class="title">i all jumped ToLM!!</p>
+		<p>so uh yeah it took me over an hour to do that (the difficulty of that is bottom-low unreal btw), and it was painful.</p>
+		<p>now with that being done, i'll prob make a vid about the tower soon</p>
+        <br>
+		<img src="https://media.discordapp.net/attachments/1400809228108824596/1401520542476926976/image.png?ex=68909338&amp;is=688f41b8&amp;hm=dbdbd000c28252584fa252ab2214fdc597e74c67613bc8d3b9803eac1cc8b763&amp;=&amp;format=webp&amp;quality=lossless&amp;width=845&amp;height=191" alt="all ToLM recordings">
+		</div>
+
+		<div class="post">
+		<p class="title">roblox the corporate piece of shit</p>
+		<p>they're investigating this issue for over a week now, when will these lazy things do smth about it?!</p>
+        <br>
+		<img src="https://media.discordapp.net/attachments/1400809228108824596/1400809331284512838/image.png?ex=688dfcda&amp;is=688cab5a&amp;hm=ce003f006fb491ee24cd45733cce4f0f67c46f20b336687ebdf4f5845c7801df&amp;=&amp;format=webp&amp;quality=lossless&amp;width=1133&amp;height=698" alt="image of roblox still having issue">
+		<img src="https://media.discordapp.net/attachments/1400809228108824596/1400809331867390053/image.png?ex=688dfcda&amp;is=688cab5a&amp;hm=2fcd5dc3a1ecdeca822833aca4fa7d7982eed2ef1141f135af491271bd7a67f7&amp;=&amp;format=webp&amp;quality=lossless&amp;width=639&amp;height=417" alt="image of me failing to play me game">
+		<br>
+		^^^^
+		<br>
+		who ate the images??
+		</div>
+
+		<div class="post">
+		<p class="title">test i show test</p>
+        <br>
+		<img src="https://tse3.mm.bing.net/th/id/OIP.80KL0snEb6cQnTDxCStuuAHaFo?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" alt="i always come back">
+		</div>
         `
     },
     "https://realmastertonky.github.io/site/python": function() {
@@ -289,6 +325,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
