@@ -17,9 +17,9 @@ function loadtopbar() {
 }
 
 // format: ["title", ["<p>paragraph 1</p>", "<img>insert image here</img>"]]
-let posts = {
-    ["test i show test 2: the revenge", [`purp man here vvvv`, `<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.hpi5JA_MLEsL9JtJCT43dAHaJi%3Fpid%3DApi&f=1&ipt=e874a342888a28b1fa02b11295457d3e43e006bf30f6fcb032bc594264175e1d&ipo=images"></img>`]]
-}
+let posts = [
+    ["test i show test 2: the revenge", [`purp man here vvvv`, `<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.hpi5JA_MLEsL9JtJCT43dAHaJi%3Fpid%3DApi&f=1&ipt=e874a342888a28b1fa02b11295457d3e43e006bf30f6fcb032bc594264175e1d&ipo=images"></img>`]],
+]
 
 let pages = {
     "https://realmastertonky.github.io/site/": function() {
@@ -272,6 +272,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
