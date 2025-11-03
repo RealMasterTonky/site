@@ -1,5 +1,6 @@
 let topbarbuttons = {
     "home": "https://realmastertonky.github.io/site/",
+    "my posts": "https://realmastertonky.github.io/site/posts",
     "my artworks": "https://realmastertonky.github.io/site/artworks",
     "python programs": "https://realmastertonky.github.io/site/python",
     "roblox related stuff": "https://realmastertonky.github.io/site/roblox",
@@ -15,11 +16,46 @@ function loadtopbar() {
     }
 }
 
+// format: ["title", ["<p>paragraph 1</p>", "<img>insert image here</img>"]]
+let posts = {
+    ["test i show test 2: the revenge", [`purp man here vvvv`, `<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.hpi5JA_MLEsL9JtJCT43dAHaJi%3Fpid%3DApi&f=1&ipt=e874a342888a28b1fa02b11295457d3e43e006bf30f6fcb032bc594264175e1d&ipo=images"></img>`]]
+}
+
 let pages = {
     "https://realmastertonky.github.io/site/": function() {
         document.body.innerHTML += "<h1>home</h1>"
         document.body.innerHTML += "<p>welcome to my website! for now it's about showing my things & creations</p>"
         document.body.innerHTML += "<p>so yeah, feel free to explore things here</p>"
+
+        document.body.innerHTML += `<p style="font-size:34px">recent posts</p>`
+        let recentposts = document.createElement('div')
+        recentposts.className = "MyPosts"
+        document.body.appendChild(recentposts)
+
+        let post1 = document.createElement('div')
+        post1.className = "post"
+        post1.innerHTML += `<p class="${posts[0][0]}">`
+        for(element in posts[0][1]) {
+            post1.innerHTML += element
+        }
+        recentposts.appendChild(post1)
+    },
+    "https://realmastertonky.github.io/site/posts": function() {
+        document.body.innerHTML += "<h1>my posts</h1>"
+        
+        let postsdiv = document.createElement('div')
+        postsdiv.className = "MyPosts"
+        document.body.appendChild(postsdiv)
+
+        for(post in posts) {
+            let postdiv = document.createElement('div')
+            postdiv.className = "post"
+            postdiv.innerHTML += `<p class="${post[0]}">`
+            for(element in post[1]) {
+                postdiv.innerHTML += element
+            }
+            postsdiv.appendChild(postdiv)
+        }
     },
     "https://realmastertonky.github.io/site/python": function() {
         document.body.innerHTML += "<h1>python programs</h1>"
@@ -236,6 +272,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
