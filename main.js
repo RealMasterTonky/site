@@ -1,6 +1,7 @@
 let topbarbuttons = {
     "home": "https://realmastertonky.github.io/site/",
     "my artworks": "https://realmastertonky.github.io/site/artworks",
+    "python programs": "https://realmastertonky.github.io/site/python",
     "roblox related stuff": "https://realmastertonky.github.io/site/roblox",
 }
 
@@ -19,6 +20,13 @@ let pages = {
         document.body.innerHTML += "<h1>home</h1>"
         document.body.innerHTML += "<p>welcome to my website! for now it's about showing my things & creations</p>"
         document.body.innerHTML += "<p>so yeah, feel free to explore things here</p>"
+    },
+    "https://realmastertonky.github.io/site/python": function() {
+        document.body.innerHTML += "<h1>python programs</h1>"
+        document.body.innerHTML += "<p>all of them are made in python 3.8.0, so don't be suprised if they don't work properly</p>"
+        document.body.innerHTML += "<p>and every program (except for maththing.py) requires pygame module.</p>"
+        document.body.innerHTML += "<br>"
+        document.body.innerHTML += `<p>first game.py - game where red ball (that ur controlling using arrow keys) eats blue balls, growing in size.</p><button onclick="window.open('./content/pythonprograms/first game.py')">download</button>`
     },
     "https://realmastertonky.github.io/site/roblox": function() {
         document.body.innerHTML += "<h1>roblox related stuff</h1>"
@@ -223,6 +231,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
