@@ -56,6 +56,23 @@ let pages = {
             }
             postsdiv.appendChild(postdiv)
         }
+
+        document.body.innerHTML += "<br>"
+
+        let legacypostsdiv = document.createElement('div')
+        legacypostsdiv.className = "MyPosts"
+        document.body.appendChild(legacypostsdiv)
+
+        legacypostsdiv.innerHTML = `
+        <div class="post">
+		<p class="title">about my roblox stuff</p>
+		<p>as u heard from multiple youtubers, roblox is getting sued and stuff. so well, it looks like roblox is gonna dier soon as they're losing billions, so here's wat am gonna do:</p>
+		<p>am gonna start putting the roblox related stuff (my games &amp; towers) into a separate page, and i think i'll start making games outside of roblox</p>
+		<p>why roblox into a separate page? well it's MY choice to do so! and if roblox actually diers, it'll be easier for me to erase the page from existence!</p>
+		<p>anyways uh yeah... quite sad that roblox's this corporate, like they couldn't even make a proper moderation team 💔</p>
+		<p>and i hope things will go well soon. #FREESCHLEP !</p>
+        </div>
+        `
     },
     "https://realmastertonky.github.io/site/python": function() {
         document.body.innerHTML += "<h1>python programs</h1>"
@@ -272,6 +289,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
