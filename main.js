@@ -26,7 +26,12 @@ let pages = {
         document.body.innerHTML += "<p>all of them are made in python 3.8.0, so don't be suprised if they don't work properly</p>"
         document.body.innerHTML += "<p>and every program (except for maththing.py) requires pygame module.</p>"
         document.body.innerHTML += "<br>"
-        document.body.innerHTML += `<div style="background-color:rgba(255,255,255,0.8)"><p>first game.py - game where red ball (that ur controlling using arrow keys) eats blue balls, growing in size.</p><button onclick="window.open('./content/pythonprograms/first game.py')">download</button></div>`
+        document.body.innerHTML += `<div style="background-color:rgba(255,255,255,0.2)"><p>first game.py - "game" where red ball (that ur controlling using arrow keys) eats blue balls, growing in size.</p><button onclick="window.open('./content/pythonprograms/first game.py')">download</button></div>`
+        document.body.innerHTML += `<div style="background-color:rgba(255,0,0,0.2)"><p>clickcircles.py - game where u can choose difficulty, where u just click on the red dots on the white background till the timer runs out</p><button onclick="window.open('./content/pythonprograms/clickcircles.py')">download</button></div>`
+        document.body.innerHTML += `<div style="background-color:rgba(0,255,0,0.2)"><p>drawthing.py - remember paint? this is just worse version of it, where pressing 1-9 changes color of the brush & pressing delete key clears the entire thing</p><button onclick="window.open('./content/pythonprograms/drawthing.py')">download</button></div>`
+        document.body.innerHTML += `<div style="background-color:rgba(0,0,255,0.2)"><p>maththing.py - infinite math test with score that increases when u answer each question correctly (the math questions are easy)</p><button onclick="window.open('./content/pythonprograms/maththing.py')">download</button></div>`
+        document.body.innerHTML += `<div style="background-color:rgba(255,255,0,0.2)"><p>platformergame v1.zip - failed attempt at making a platformer game 🤑👍</p><button onclick="window.open('./content/pythonprograms/platformergame v1.zip')">download</button></div>`
+        document.body.innerHTML += `<div style="background-color:rgba(255,0,255,0.2)"><p>platformergame v2.zip - sorta successful attempt at making a platformer game, u can modify the objects in the file but it's prob gonna be wonky</p><button onclick="window.open('./content/pythonprograms/platformergame v2.zip')">download</button></div>`
     },
     "https://realmastertonky.github.io/site/roblox": function() {
         document.body.innerHTML += "<h1>roblox related stuff</h1>"
@@ -231,6 +236,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
