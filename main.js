@@ -34,9 +34,9 @@ let pages = {
 
         let post1 = document.createElement('div')
         post1.className = "post"
-        post1.innerHTML += `<p class="${posts[0][0]}">`
+        post1.innerHTML += `<p class="title">${posts[0][0]}</p>`
         for(element in posts[0][1]) {
-            post1.innerHTML += element
+            post1.innerHTML += posts[0][1][element]
         }
         recentposts.appendChild(post1)
     },
@@ -50,9 +50,9 @@ let pages = {
         for(post in posts) {
             let postdiv = document.createElement('div')
             postdiv.className = "post"
-            postdiv.innerHTML += `<p class="${post[0]}">`
-            for(element in post[1]) {
-                postdiv.innerHTML += element
+            postdiv.innerHTML += `<p class="title">${posts[post][0]}</p>`
+            for(element in posts[post][1]) {
+                postdiv.innerHTML += posts[post][1][element]
             }
             postsdiv.appendChild(postdiv)
         }
@@ -272,6 +272,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
