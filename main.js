@@ -18,7 +18,7 @@ function loadtopbar() {
 
 // format: ["title", ["<p>paragraph 1</p>", "<img>insert image here</img>"]]
 let posts = [
-	["fun fact!", [`<p>i used to develop discord bot named "Tonk", which as far as i remember, used to be the biggest bot (in terms of content)</p>`, `<p>now, due to me losing interest in developing discord bots, it's p much inactive now</p>`, `<p>now, here's some screenshots of past me testing out the bot</p>`, `<br>`, `<img src="./content/post-images/img1.jpg" alt="me testing out T/Say"></img>`, `<img src="./content/post-images/img2.jpg" alt="me testing out T/Balance"></img>`, `<img src="./content/post-images/img3.jpg" alt="me testing out T/Shop"></img>`]]
+	["fun fact!", [`<p>i used to develop discord bot named "Tonk", which as far as i remember, used to be the biggest bot (in terms of content)</p>`, `<p>now, due to me losing interest in developing discord bots, it's p much inactive now</p>`, `<p>now, here's some screenshots of past me testing out the bot</p>`, `<br>`, `<img src="./content/post-images/img1.jpg" alt="me testing out T/Say"></img>`, `<img src="./content/post-images/img2.jpg" alt="me testing out T/Balance"></img>`, `<img src="./content/post-images/img3.jpg" alt="me testing out T/Shop"></img>`]],
     ["test i show test 2: the revenge", [`<p>purp man here vvvv</p>`, `<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.hpi5JA_MLEsL9JtJCT43dAHaJi%3Fpid%3DApi&f=1&ipt=e874a342888a28b1fa02b11295457d3e43e006bf30f6fcb032bc594264175e1d&ipo=images"></img>`]],
 ]
 
@@ -328,6 +328,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
