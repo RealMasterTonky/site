@@ -40,6 +40,14 @@ let pages = {
             post1.innerHTML += posts[0][1][element]
         }
         recentposts.appendChild(post1)
+
+		let post2 = document.createElement('div')
+        post2.className = "post"
+        post2.innerHTML += `<p class="title">${posts[1][0]}</p>`
+        for(element in posts[1][1]) {
+            post2.innerHTML += posts[1][1][element]
+        }
+        recentposts.appendChild(post2)
     },
     "https://realmastertonky.github.io/site/posts": function() {
         document.body.innerHTML += "<h1>my posts</h1>"
@@ -328,6 +336,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
