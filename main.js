@@ -18,6 +18,7 @@ function loadtopbar() {
 
 // format: ["title", ["<p>paragraph 1</p>", "<img>insert image here</img>"]]
 let posts = [
+	["fun fact!", [`<p>i used to develop discord bot named "Tonk", which as far as i remember, used to be the biggest bot (in terms of content)</p>`, `<p>now, due to me losing interest in developing discord bots, it's p much inactive now</p>`, `<p>now, here's some screenshots of past me testing out the bot</p>`, `<br>`, `<img src="./content/post-images/img1.jpg" alt="me testing out T/Say"></img>`, `<img src="./content/post-images/img2.jpg" alt="me testing out T/Balance"></img>`, `<img src="./content/post-images/img3.jpg" alt="me testing out T/Shop"></img>`]]
     ["test i show test 2: the revenge", [`<p>purp man here vvvv</p>`, `<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.hpi5JA_MLEsL9JtJCT43dAHaJi%3Fpid%3DApi&f=1&ipt=e874a342888a28b1fa02b11295457d3e43e006bf30f6fcb032bc594264175e1d&ipo=images"></img>`]],
 ]
 
@@ -112,7 +113,7 @@ let pages = {
     },
     "https://realmastertonky.github.io/site/python": function() {
         document.body.innerHTML += "<h1>python programs</h1>"
-        document.body.innerHTML += "<p>all of them are made in python 3.8.0, so don't be suprised if they don't work properly</p>"
+        document.body.innerHTML += "<p>all of them are made in python 3.8.0, so don't be suprised if they don't work properly on newer versions of the programming language</p>"
         document.body.innerHTML += "<p>and every program (except for maththing.py) requires pygame module.</p>"
         document.body.innerHTML += "<br>"
         document.body.innerHTML += `<div style="background-color:rgba(255,255,255,0.2)"><p>first game.py - "game" where red ball (that ur controlling using arrow keys) eats blue balls, growing in size.</p><button onclick="window.open('./content/pythonprograms/first game.py')">download</button></div>`
@@ -121,6 +122,8 @@ let pages = {
         document.body.innerHTML += `<div style="background-color:rgba(0,0,255,0.2)"><p>maththing.py - infinite math test with score that increases when u answer each question correctly (the math questions are easy)</p><button onclick="window.open('./content/pythonprograms/maththing.py')">download</button></div>`
         document.body.innerHTML += `<div style="background-color:rgba(255,255,0,0.2)"><p>platformergame v1.zip - failed attempt at making a platformer game 🤑👍</p><button onclick="window.open('./content/pythonprograms/platformergame v1.zip')">download</button></div>`
         document.body.innerHTML += `<div style="background-color:rgba(255,0,255,0.2)"><p>platformergame v2.zip - sorta successful attempt at making a platformer game, u can modify the objects in the file but it's prob gonna be wonky</p><button onclick="window.open('./content/pythonprograms/platformergame v2.zip')">download</button></div>`
+		document.body.innerHTML += "<br>"
+		document.body.innerHTML += "<p>feel free to modify any of these files without my permission</p>"
     },
     "https://realmastertonky.github.io/site/roblox": function() {
         document.body.innerHTML += "<h1>roblox related stuff</h1>"
@@ -325,6 +328,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
