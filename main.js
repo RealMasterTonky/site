@@ -26,19 +26,19 @@ let posts = [
 		`<p>and then my braincells decided "hey why not edit this a little bit?"</p>`,
 		`<p>...and that resulted into this creation</p>`,
 		`<br>`,
-		`<audio src="./content/posts/post2/scream.mp3"></audio>`,
+		`<audio controls><source src="./content/posts/post2/scream.mp3"></audio>`,
 		`<br>`,
 		`<p>and, ofc, knowing me, i also made a "peakified version" of it</p>`,
 		`<br>`,
-		`<audio src="./content/posts/post2/peak scream.mp3"></audio>`,
+		`<audio controls><source src="./content/posts/post2/peak scream.mp3"></audio>`,
 		`<br>`,
 		`<p>i didn't stop there. the last part of the peak scream.mp3 sounded funi to me, so i extended it and now it's this</p>`,
 		`<br>`,
-		`<audio src="./content/posts/post2/drill.mp3"></audio>`,
+		`<audio controls><source src="./content/posts/post2/drill.mp3"></audio>`,
 		`<br>`,
 		`<p>and then i decided to push the sound editing program to the limits, which resulted in this final sound shenanigan:</p>`,
 		`<br>`,
-		`<audio src="./content/posts/post2/wii sound coming from me scream.mp3"></audio>`,
+		`<audio controls><source src="./content/posts/post2/wii sound coming from me scream.mp3"></audio>`,
 		`<br>`,
 		`<p>so yeah, quite the fun i had from this time wasting activity!</p>`
 		] // great heavens
@@ -377,6 +377,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
