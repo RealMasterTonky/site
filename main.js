@@ -40,7 +40,7 @@ let posts = [
 		`<br>`,
 		`<audio src="./content/posts/post2/wii sound coming from me scream.mp3"></audio>`,
 		`<br>`,
-		`<p>so yeah, quite the fun i had from these shenanigans!</p>`
+		`<p>so yeah, quite the fun i had from this time wasting activity!</p>`
 		] // great heavens
 	],
 	["fun fact!", 
@@ -377,6 +377,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
