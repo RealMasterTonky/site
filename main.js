@@ -21,7 +21,7 @@ let posts = [
 	["sound editing shenanigans", [
 		`<p>so basically, one of me good frends sent smth "scary" (it's actually funi), and i sent this voice recording as a reaction</p>`,
 		`<br>`,
-		`<audio src="./content/posts/post2/audio_2025-11-10_17-43-32.mp3"></audio>`,
+		`<audio controls><source src="./content/posts/post2/audio_2025-11-10_17-43-32.mp3"></audio>`,
 		`<br>`,
 		`<p>and then my braincells decided "hey why not edit this a little bit?"</p>`,
 		`<p>...and that resulted into this creation</p>`,
@@ -377,6 +377,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
