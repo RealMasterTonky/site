@@ -18,7 +18,40 @@ function loadtopbar() {
 
 // format: ["title", ["<p>paragraph 1</p>", "<img>insert image here</img>"]]
 let posts = [
-	["fun fact!", [`<p>i used to develop discord bot named "Tonk", which as far as i remember, used to be the biggest bot (in terms of content)</p>`, `<p>now, due to me losing interest in developing discord bots, it's p much inactive now</p>`, `<p>now, here's some screenshots of past me testing out the bot</p>`, `<br>`, `<img src="./content/post-images/img1.jpg" alt="me testing out T/Say"></img>`, `<img src="./content/post-images/img2.jpg" alt="me testing out T/Balance"></img>`, `<img src="./content/post-images/img3.jpg" alt="me testing out T/Shop"></img>`]],
+	["sound editing shenanigans", [
+		`<p>so basically, one of me good frends sent smth "scary" (it's actually funi), and i sent this voice recording as a reaction</p>`,
+		`<br>`,
+		`<audio src="./content/posts/post2/audio_2025-11-10_17-43-32.mp3"></audio>`,
+		`<br>`,
+		`<p>and then my braincells decided "hey why not edit this a little bit?"</p>`,
+		`<p>...and that resulted into this creation</p>`,
+		`<br>`,
+		`<audio src="./content/posts/post2/scream.mp3"></audio>`,
+		`<br>`,
+		`<p>and, ofc, knowing me, i also made a "peakified version" of it</p>`,
+		`<br>`,
+		`<audio src="./content/posts/post2/peak scream.mp3"></audio>`,
+		`<br>`,
+		`<p>i didn't stop there. the last part of the peak scream.mp3 sounded funi to me, so i extended it and now it's this</p>`,
+		`<br>`,
+		`<audio src="./content/posts/post2/drill.mp3"></audio>`,
+		`<br>`,
+		`<p>and then i decided to push the sound editing program to the limits, which resulted in this final sound shenanigan:</p>`,
+		`<br>`,
+		`<audio src="./content/posts/post2/wii sound coming from me scream.mp3"></audio>`,
+		`<br>`,
+		`<p>so yeah, quite the fun i had from these shenanigans!</p>`
+		] // great heavens
+	],
+	["fun fact!", 
+	 [`<p>i used to develop discord bot named "Tonk", which as far as i remember, used to be the biggest bot (in terms of content)</p>`, 
+	  `<p>now, due to me losing interest in developing discord bots, it's p much inactive now</p>`, `<p>now, here's some screenshots of past me testing out the bot</p>`, 
+	  `<br>`, 
+	  `<img src="./content/posts/post1/img1.jpg" alt="me testing out T/Say"></img>`, 
+	  `<img src="./content/posts/post1/img2.jpg" alt="me testing out T/Balance"></img>`, 
+	  `<img src="./content/posts/post1/img3.jpg" alt="me testing out T/Shop"></img>`
+	 ]
+	],
     ["test i show test 2: the revenge", [`<p>purp man here vvvv</p>`, `<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.hpi5JA_MLEsL9JtJCT43dAHaJi%3Fpid%3DApi&f=1&ipt=e874a342888a28b1fa02b11295457d3e43e006bf30f6fcb032bc594264175e1d&ipo=images"></img>`]],
 ]
 
@@ -48,6 +81,14 @@ let pages = {
             post2.innerHTML += posts[1][1][element]
         }
         recentposts.appendChild(post2)
+
+		let post3 = document.createElement('div')
+        post3.className = "post"
+        post3.innerHTML += `<p class="title">${posts[2][0]}</p>`
+        for(element in posts[2][1]) {
+            post3.innerHTML += posts[2][1][element]
+        }
+        recentposts.appendChild(post3)
     },
     "https://realmastertonky.github.io/site/posts": function() {
         document.body.innerHTML += "<h1>my posts</h1>"
@@ -336,6 +377,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
