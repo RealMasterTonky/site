@@ -249,7 +249,7 @@ let pages = {
         document.body.innerHTML += "<h1>my artworks</h1>"
         document.body.innerHTML += `<button style="font-size:30px" onclick="window.location.href='https://realmastertonky.github.io/site/artworks/atrocities'">atrocities</button><br>low quality caricatures that i drew for laughs and coughs<br><br>`
         document.body.innerHTML += `<button style="font-size:30px" onclick="window.location.href='https://realmastertonky.github.io/site/artworks/digital'">digital drawings</button><br>pixels arranged in a way that makes (imo) decent images<br><br>`
-        document.body.innerHTML += `<button style="font-size:30px" onclick="window.location.href='https://realmastertonky.github.io/site/artworks/irl'">irl drawings</button><br>pictures of papers with drawings`
+        document.body.innerHTML += `<button style="font-size:30px" onclick="window.location.href='https://realmastertonky.github.io/site/artworks/irl'">irl drawings</button><br>pictues of mmmm pencil scribbles with magik colored markers`
     },
     "https://realmastertonky.github.io/site/artworks/atrocities": function() {
         document.body.innerHTML += "<h1>atrocities</h1>"
@@ -377,6 +377,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
