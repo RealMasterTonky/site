@@ -12,10 +12,7 @@ button {
 }
 
 button :hover {
-  font: caption;
-  border-width: 2px;
-  border-color: #000001;
-  background-color: #CCCCCC;
+  background-color: #CCCCCC !important;
 }
 
 .topbar {
