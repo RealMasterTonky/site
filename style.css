@@ -6,13 +6,13 @@ body {
 
 button {
   font: caption;
-  outline: 5px soild black;
+  border: 5px soild black;
   background-image: linear-gradient(360deg, #b3b3b3, transparent);
 }
 
 button :hover {
   font: caption;
-  outline: 5px soild black;
+  border: 5px soild black;
   background-color: #CCCCCC;
 }
 
