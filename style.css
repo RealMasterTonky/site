@@ -1,9 +1,18 @@
 body {
   background-color:LightGray;
+  background-image: url("./content/tile.png");
+  font: caption;
+}
+
+button {
+  font: caption;
+  outline: 5px soild black;
+  background-image: linear-gradient(360deg, #b3b3b3, transparent);
 }
 
 .topbar {
-  background-color: #444444;
+  border-width: 2px;
+  background-color: #44444455;
   overflow: hidden;
 }
 
