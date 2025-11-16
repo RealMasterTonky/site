@@ -11,7 +11,7 @@ button {
   background-image: linear-gradient(360deg, #b3b3b3, transparent);
 }
 
-button :hover {
+button:hover {
   background-image: linear-gradient(360deg, #b3b3b3, #CCCCCC);
 }
 
