@@ -211,7 +211,7 @@ let pages = {
             "ToZ": ["Tower of Zitronda", "low remorseless", [200, 0, 200], "https://www.roblox.com/games/78940140938774/Tower-of-Zitronda", true],
             "ToWM": ["Tower of Wedgicular Manslaughter", "high remorseless", [200, 0, 200], "https://www.roblox.com/games/89583176822766/Tower-of-Wedgicular-Manslaughter", false],
             "SoUG": ["Steeple of Unfun GBJ", "peak remorseless", [200, 0, 200], "https://www.roblox.com/games/110278596870369/Steeple-of-Unfun-GBJ", true],
-            "SoUG": ["Tower of Eternal Darkness", "peak remorseless", [200, 0, 200], "https://www.roblox.com/games/93392183780862/Tower-of-Eternal-Darkness", false],
+            "ToED": ["Tower of Eternal Darkness", "peak remorseless", [200, 0, 200], "https://www.roblox.com/games/93392183780862/Tower-of-Eternal-Darkness", false],
             "DN:R": ["Deconfirmed Neat: Restored", "remorseless/insane", [100, 0, 228], "https://www.roblox.com/games/88005335424256/Deconfirmed-NEAT-Restored", false],
             "OToWM": ["Old Tower of Wedgicular Manslaughter", "remorseless/insane", [100, 0, 228], "https://www.roblox.com/games/99170113213701/OToWM", true],
             "RoUT": ["Room of Unfair Trials", "baseline insane", [0, 0, 255], "https://www.roblox.com/games/120788794283207/Room-of-Unfair-Trials", false],
@@ -377,6 +377,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
