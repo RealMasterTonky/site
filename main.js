@@ -18,6 +18,24 @@ function loadtopbar() {
 
 // format: ["title", ["<p>paragraph 1</p>", "<img>insert image here</img>"]]
 let posts = [
+	["me the level 2 cooker", [
+		`<p>so today, i felt quite hungry & decided to cook myself smth</p>`,
+		`<br>`,
+		`<p>so this is the result</p>`,
+		`<br>`,
+		`<img src="./content/posts/post3/IMG_20251121_180045.jpg"></img>`,
+		`<img src="./content/posts/post3/IMG_20251121_180052.jpg"></img>`,
+		`<br>`,
+		`<p>for the burger i just used buns that i had for few days, 3 fried chicken nuggets from the freezer, cheese sauce & 1 cheese slice</p>`,
+		`<p>but for the noodles, i used instant ramen, cut up into squares egg, mustard & cheese sauces</p>`,
+		`<br>`,
+		`<p>now, for the bad news, look at this D:</p>`,
+		`<br>`,
+		`<img src="./content/posts/post3/IMG_20251121_181032.jpg"></img>`,
+		`<br>`,
+		`<p>but anyway, i enjoyed the monstrosity i created!</p>`,
+		]
+	],
 	["sound editing shenanigans", [
 		`<p>so basically, one of me good frends sent smth "scary" (it's actually funi), and i sent this voice recording as a reaction</p>`,
 		`<br>`,
@@ -377,6 +395,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
