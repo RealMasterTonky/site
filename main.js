@@ -18,8 +18,21 @@ function loadtopbar() {
 
 // format: ["title", ["<p>paragraph 1</p>", "<img>insert image here</img>"]]
 let posts = [
+	["MASTERTONKY IN DESMOS GRAPHING CALCULATOR", [
+		`<p>i had this thought of remaking my old pfp in desmos graphing calculator</p>`,
+		`<p>and after 30 funi minutes or so, i got this result</p>`,
+		`<br>`,
+		`<video controls><source src="./content/posts/post4/JIRNY IN GRAPHING CALCULATOR.mp4" type="video/mp4"></video>`,
+		`<br>`,
+		`<p>(don't mind the jirny's idea 2 btw it's an inside joke between me and 2 friends)</p>`,
+		`<p>but uhh yeah this was a fun thing to do</p>`,
+		`<br>`,
+		`<p>now, i assume u wanna do funi things with it too so here's the link to the graph:</p>`,
+		`<a href="https://www.desmos.com/calculator/tend1mn0cn"></a>`,
+		]
+	],
 	["me the level 2 cooker", [
-		`<p>so today, i felt quite hungry & decided to cook myself smth</p>`,
+		`<p>so today (november 21st), i felt quite hungry & decided to cook myself smth</p>`,
 		`<br>`,
 		`<p>so this is the result</p>`,
 		`<br>`,
@@ -395,6 +408,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
