@@ -27,7 +27,7 @@ let posts = [
 		`<p>(don't mind the jirny's idea 2 btw it's an inside joke between me and 2 friends)</p>`,
 		`<p>but uhh yeah this was a fun thing to do</p>`,
 		`<br>`,
-		`<p>now, i assume u wanna do funi things with it too so here's the link to the graph --> <a href="https://www.desmos.com/calculator/tend1mn0cn"></a></p>`,
+		`<p>now, i assume u wanna do funi things with it too so here's the link to the graph --> <a href="https://www.desmos.com/calculator/tend1mn0cn">click me</a></p>`,
 		]
 	],
 	["me the level 2 cooker", [
@@ -407,6 +407,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
