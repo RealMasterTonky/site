@@ -23,7 +23,7 @@ function rainbowtext(text) {
 	for(let i = 0; i < text.length; i+=1) {
     	let b = i
 		b -= skips
-    	while (b > 7) {
+    	while (b >= 7) {
       		b -= 7
 		}
 		output.push(`<mark style="background-color:rgba(0,0,0,0);color:${colors[b]}">${text.split('')[i]}</mark>`)
@@ -438,6 +438,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
