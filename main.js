@@ -27,8 +27,7 @@ function rainbowtext(text) {
 		}
 		output.push(`<mark style="background-color:rgba(0,0,0,0);color:${colors[b]}">${letter}</mark>`)
     }
-    return output.join("")
-  }
+	return output.join("")
 }
 
 function loadtopbar() {
@@ -435,6 +434,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
