@@ -21,11 +21,11 @@ function rainbowtext(text) {
 	}
 	
 	for(let i = 0; i < text.length; i+=1) {
-		i -= skips
 		if(text.split('')[i] == " ") {
 			skips += 1
 		}
     	let b = i
+		b -= skips
     	while (b > 7) {
       		b -= 7
 		}
@@ -438,6 +438,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
