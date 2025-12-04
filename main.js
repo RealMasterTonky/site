@@ -10,26 +10,26 @@ function rainbowtext(text) {
 	let output = []
 	let skips = 0
 	let colors = {
-		1: "red",
-		2: "orange",
-		3: "yellow",
-		4: "lightgreen",
-		5: "aqua",
-		6: "blue",
-		7: "blueviolet",
-		8: "violet",
+		0: "red",
+		1: "orange",
+		2: "yellow",
+		3: "lightgreen",
+		4: "aqua",
+		5: "blue",
+		6: "blueviolet",
+		7: "violet",
 	}
 	
-	for(let i = 1; i < text.length; i+=1) {
-		if(text.split('')[i-1] == " ") {
+	for(let i = 0; i < text.length; i+=1) {
+		if(text.split('')[i] == " ") {
 			skips += 1
 			continue
 		}
     	let b = i
-    	while (b > 6) {
-      		b -= 6
+    	while (b > 7) {
+      		b -= 7
 		}
-		b -= skips
+		b += skips
 		output.push(`<mark style="background-color:rgba(0,0,0,0);color:${colors[b]}">${text.split('')[i]}</mark>`)
     }
 	return output.join("")
@@ -439,6 +439,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
