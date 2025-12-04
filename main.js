@@ -216,8 +216,6 @@ let pages = {
         <br>
 		<img src="https://tse3.mm.bing.net/th/id/OIP.80KL0snEb6cQnTDxCStuuAHaFo?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" alt="i always come back">
 		</div>
-		<br>
-		<p>${rainbowtext("vrovrovrovrovrovrovrovrovrovro this RAINBOWTEXT thing is CURSED.")}</p>
         `
     },
     "https://realmastertonky.github.io/site/python": function() {
@@ -438,6 +436,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
