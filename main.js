@@ -206,6 +206,7 @@ let pages = {
     },
     "https://realmastertonky.github.io/site/roblox": function() {
         document.body.innerHTML += "<h1>roblox related stuff</h1>"
+		document.body.innerHTML += `<div style="background-color:rgba(255,255,0,0.2)"><p style="font-size:30px">! inactive in roblox !</p><p>due to russian organization "роскомнадзор" (which is responsible for restricting internet in russia), i can't play roblox anymore. Thanks Russia!</p></div>`
         document.body.innerHTML += `<p style="font-size:34px">my games</p>`
         document.body.innerHTML += `<button onclick="window.open('https://www.roblox.com/games/15954053813/Tonk-Madness')">Tonk Madness</button>`
         document.body.innerHTML += `<button onclick="window.open('https://www.roblox.com/games/111709592979269/MasterTonkys-Towering-Tomfoolery')">MasterTonky's Towering Tomfoolery</button>`
@@ -407,6 +408,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
