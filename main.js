@@ -6,6 +6,31 @@ let topbarbuttons = {
     "roblox related stuff": "https://realmastertonky.github.io/site/roblox",
 }
 
+function rainbowtext(text) {
+	let output = []
+	let colors = {
+		1: "red",
+		2: "orange",
+		3: "yellow",
+		4: "lightgreen",
+		5: "aqua",
+		6: "blue",
+		7: "blueviolet",
+		8: "violet",
+	}
+	
+	for(let i = 1; i < text.length; i+=1) {
+    	let b = i
+		let letter = text.split('')[i-1]
+    	while (b > 6) {
+      		b -= 6
+		}
+		output.push(`<mark style="background-color:rgba(0,0,0,0);color:${colors[b]}">${letter}</mark>`)
+    }
+    return output.join("")
+  }
+}
+
 function loadtopbar() {
     let topbar = document.createElement("div")
     topbar.className = "topbar"
@@ -188,6 +213,8 @@ let pages = {
         <br>
 		<img src="https://tse3.mm.bing.net/th/id/OIP.80KL0snEb6cQnTDxCStuuAHaFo?r=0&amp;rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" alt="i always come back">
 		</div>
+		<br>
+		<p>test ${rainbowtext("i show test")}</p>
         `
     },
     "https://realmastertonky.github.io/site/python": function() {
@@ -408,6 +435,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
