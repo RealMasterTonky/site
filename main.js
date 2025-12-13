@@ -1,11 +1,9 @@
-const mainsitelink = "https://realmastertonky.github.io"
-
 let topbarbuttons = {
-    "home": `${mainsitelink}/`,
-    "my posts": `${mainsitelink}/posts`,
-    "my artworks": `${mainsitelink}/artworks`,
-    "python programs": `${mainsitelink}/python`,
-    "roblox related stuff": `${mainsitelink}/roblox`,
+    "home": `https://realmastertonky.github.io/`,
+    "my posts": `https://realmastertonky.github.io/posts`,
+    "my artworks": `https://realmastertonky.github.io/artworks`,
+    "python programs": `https://realmastertonky.github.io/python`,
+    "roblox related stuff": `https://realmastertonky.github.io/roblox`,
 }
 
 function rainbowtext(text) {
@@ -116,7 +114,7 @@ let posts = [
 ]
 
 let pages = {
-    `${mainsitelink}/`: function() {
+    `https://realmastertonky.github.io/`: function() {
         document.body.innerHTML += "<h1>home</h1>"
         document.body.innerHTML += "<p>welcome to my website! for now it's about showing my things & creations</p>"
         document.body.innerHTML += "<p>so yeah, feel free to explore things here</p>"
@@ -150,7 +148,7 @@ let pages = {
         }
         recentposts.appendChild(post3)
     },
-    `${mainsitelink}/posts`: function() {
+    `https://realmastertonky.github.io/posts`: function() {
         document.body.innerHTML += "<h1>my posts</h1>"
         
         let postsdiv = document.createElement('div')
@@ -220,7 +218,7 @@ let pages = {
 		</div>
         `
     },
-    `${mainsitelink}/python`: function() {
+    `https://realmastertonky.github.io/python`: function() {
         document.body.innerHTML += "<h1>python programs</h1>"
         document.body.innerHTML += "<p>all of them are made in python 3.8.0, so don't be suprised if they don't work properly on newer versions of the programming language</p>"
         document.body.innerHTML += "<p>and every program (except for maththing.py) requires pygame module.</p>"
@@ -234,7 +232,7 @@ let pages = {
 		document.body.innerHTML += "<br>"
 		document.body.innerHTML += "<p>feel free to modify any of these files without my permission</p>"
     },
-    `${mainsitelink}/roblox`: function() {
+    `https://realmastertonky.github.io/roblox`: function() {
         document.body.innerHTML += "<h1>roblox related stuff</h1>"
 		document.body.innerHTML += `<div style="background-color:rgba(255,255,0,0.2)"><p style="font-size:30px">! me is inactive in roblox !</p><p>due to one of the russian government's organizations "роскомнадзор" (which is responsible for restricting internet in russia), i can't play roblox anymore, as they blocked the platform on the 3rd of december, 2025. Thanks Russia!</p></div>`
         document.body.innerHTML += `<p style="font-size:34px">my games</p>`
@@ -306,13 +304,13 @@ let pages = {
             document.body.innerHTML += `<p style="color:rgb(${colors[0]},${colors[1]},${colors[2]})">${tower} - ${towerstats[0]} - ${towerstats[1]} <button onclick="window.open('${towerstats[3]}')">check (${playable})</button></p>`
         }
     },
-    `${mainsitelink}/artworks`: function() {
+    `https://realmastertonky.github.io/artworks`: function() {
         document.body.innerHTML += "<h1>my artworks</h1>"
         document.body.innerHTML += `<button style="font-size:30px" onclick="window.location.href='https://realmastertonky.github.io/site/artworks/atrocities'">atrocities</button><br>low quality caricatures that i drew for laughs and coughs<br><br>`
         document.body.innerHTML += `<button style="font-size:30px" onclick="window.location.href='https://realmastertonky.github.io/site/artworks/digital'">digital drawings</button><br>pixels arranged in a way that makes (imo) decent images<br><br>`
         document.body.innerHTML += `<button style="font-size:30px" onclick="window.location.href='https://realmastertonky.github.io/site/artworks/irl'">irl drawings</button><br>pictues of mmmm pencil scribbles with magik colored markers`
     },
-    `${mainsitelink}/artworks/atrocities`: function() {
+    `https://realmastertonky.github.io/artworks/atrocities`: function() {
         document.body.innerHTML += "<h1>atrocities</h1>"
         document.body.innerHTML += "<p>good luck viewing all of these</p>"
 
@@ -382,7 +380,7 @@ let pages = {
             image.innerHTML += `<img src="../content/atrocities/${filename}"></img><br><div class="title">${filename}</div>`
         })
     },
-    `${mainsitelink}/artworks/digital`: function() {
+    `https://realmastertonky.github.io/artworks/digital`: function() {
         document.body.innerHTML += "<h1>digital drawings</h1>"
 
         let files = [
@@ -403,7 +401,7 @@ let pages = {
             image.innerHTML += `<img src="../content/digital/${filename}"></img><br><div class="title">${filename}</div>`
         })
     },
-    `${mainsitelink}/artworks/irl`: function() {
+    `https://realmastertonky.github.io/artworks/irl`: function() {
         document.body.innerHTML += "<h1>irl drawings</h1>"
 
         let files = [
@@ -438,6 +436,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
